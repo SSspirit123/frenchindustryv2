@@ -502,11 +502,6 @@ if page == pages[3] :
     # Présentation du jeu de modélisation n°1
         
     if st.button("Choix du jeu de modélisation"):
-        st.markdown("""
-                    Nous avons utilisé 4 DataFrames différents pour appliquer nos modèles de machine learning.
-                    """)        
-        st.image('pre-process.png', use_column_width=True)
-        
         st.subheader("Jeu de modélisation n°1")
         st.markdown("""
                     Ce DataFrame a été créé à partir des données fournies pour le projet et avec les variables (ensemble de ratios sur la population et les entreprises) créées lors de l’initialisation des matrices de corrélation
@@ -661,10 +656,7 @@ if page == pages[3] :
                     On note un R² de test supérieur au R² train sur le modèle SVR. Cependant, les valeurs des RMSE de test sont moins intéressantes que sur le DataFrame n°2.
 
                     
-                    Il est intéressant de noter que pour SVR, nous avons un DataFrame de grandeur optimale d’après la courbe d’apprentissage. 
-
-                    
-                    Le modèle SVR offre les meilleurs résultats. Si on analyse de plus près le graphique de dispersions des résidus de ce modèle, on constate de nombreux résidus avec une valeur parfois supérieure à 5, ce qui est très important pour un salaire horaire.
+                    Le modèle SVR offre de très bon résultats. Mais si on analyse de plus près le graphique de dispersions des résidus de ce modèle (annexe page 75), on constate de nombreux résidus avec une valeur parfois supérieure à 5, ce qui est très important pour un salaire horaire.
 
                     """)
         st.write("")
